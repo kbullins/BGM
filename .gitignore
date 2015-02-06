@@ -214,3 +214,6 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+BGM/__pycache__/settings.cpython-34.pyc
+BGM/__pycache__/urls.cpython-34.pyc
+*.pyc
