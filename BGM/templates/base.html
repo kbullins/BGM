@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}{% endblock %}</title>
+  
+  <!-- Static Includes -->
+  <link rel="stylesheet" type="text/css" href="/static/bootstrap/css/bootstrap.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="/static/bootstrap/css/bootstrap-responsive.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="/static/css/master.css" media="screen" />
+  <link href="/static/css/master.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      margin: auto;
+  }
+  </style>
+  
+</head>
+
+<body style="background-color: #F5F0C8;">
+	<div class="container">
+		<table align="center" style="margin-top: 10px">
+			<thead>
+				<!-- Title -->
+				<table>
+					<td>
+						<img src="/static/images/BGMLogo-med.png"  style="width: 150px" alt="...">
+					</td>
+					<td>
+						<p style="font-family: KAISG; font-size: 500%; font-weigh; white-space: nowrap; margin-top: -30px;"> Barony of</p>
+						<p style="font-family: KAISG; font-size: 700%; font-weigh; white-space: nowrap; margin-top: -60px;margin-left: 1em"> Granite Mountain!</div>
+					</td>						
+				</table>
+				<!-- Nav Bar -->
+				<tr>
+					<div class="container" align="center" style="margin-top: -20px">
+						<div class="btn-group" role="group" aria-label="...">
+							<button type="button" class="btn btn-default">Left</button>
+							<button type="button" class="btn btn-default">Middle</button>
+							<button type="button" class="btn btn-default">Right</button>
+						</div>
+					</div>
+				</tr>
+			</thead>
+			
+			<tbody>
+			<!--Content-->
+			<td>
+				<div class="container" style="margin-top: 30px">
+					<!-- Page Content using Django Templates -->
+					{% block content %}
+					{% endblock %}
+				</div>
+			</td>
+			</tbody>
+		</table>
+	</div>
+</body>
