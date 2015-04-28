@@ -217,3 +217,14 @@ pip-log.txt
 BGM/__pycache__/settings.cpython-34.pyc
 BGM/__pycache__/urls.cpython-34.pyc
 *.pyc
+*.pyc
+.idea/workspace.xml
+*.pyc
+.idea/vcs.xml
+.idea/scopes/scope_settings.xml
+.idea/modules.xml
+.idea/misc.xml
+.idea/encodings.xml
+.idea/BGM.iml
+.idea/.name
+BGM/__pycache__/settings.cpython-34.pyc
