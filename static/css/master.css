@@ -43,4 +43,19 @@
 	top:1px;
 }
 
+/* Footer CSS */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 
+    /* Footer Font */
+    font-family:Arial;
+	font-size:16px;
+
+
+    /* Set the fixed height of the footer here */
+    text-align: center;
+    background-color: #F5F0C8;
+    height: 40px;
+}
