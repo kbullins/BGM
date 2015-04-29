@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>{% block title %}{% endblock %}</title>
+    <title>{% block title %}{% endblock %}</title>
+    <!-- Display the Fav Icon -->
+    <link rel="shortcut icon" type="image/png" href="/static/images/favicon.ico"/>
   
 <!-- Static Includes -->
 	<!-- Latest compiled and minified CSS -->
@@ -50,13 +52,17 @@
 </nav>
 
 <nav class="navbar navbar-inverse" style="border-radius: 0px; box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);">
+    <a href="\home" class="navButton" style="margin-left: 164px;">Home</a>
+    <a href="\calendar" class="navButton" style="margin-left: 20px;">Calendar</a>
+    <a href="\about" class="navButton" style="margin-left: 20px;">About</a>
+    <a href="\contact" class="navButton" style="margin-left: 20px;">Contact</a>
 </nav>
 	<div class="container">
 		<table align="center" style="margin-top: 20px">
 			<thead>
 			</thead>		
 			<tbody>
-			<!--Content-->
+			<!--Page Content-->
 			<td>
 				<div class="container">
 					<!-- Page Content using Django Templates -->

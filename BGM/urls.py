@@ -8,7 +8,10 @@ from . import views
 
 urlpatterns = patterns('',
     # Examples:
-    url(r'^$', 'BGM.views.home', name='home'),
+    url(r'^home', 'BGM.views.home', name='home'),
+    url(r'^calendar', 'BGM.views.calendar', name='calendar'),
+    url(r'^about', 'BGM.views.about', name='about'),
+    url(r'^contact', 'BGM.views.contact', name='contact'),
     # url(r'^blog/', include('blog.urls')),
     url(r'^admin/', include(admin.site.urls)),
 ) 
