@@ -16,27 +16,27 @@
 
 /* Button Style for Base Navbar */
 .navButton {
-	-moz-box-shadow:inset 0px 34px 0px -15px #d5b123;
-	-webkit-box-shadow:inset 0px 34px 0px -15px #d5b123;
-	box-shadow:inset 0px 34px 0px -15px #d5b123;
-	background-color:#cca722;
-	border:1px solid #241d13;
+	-moz-box-shadow:inset 0px 34px 0px -15px #222222;
+	-webkit-box-shadow:inset 0px 34px 0px -15px #222222;
+	box-shadow:inset 0px 34px 0px -15px #222222;
+	background-color:#222222;
+	border:1px solid #222222;
 	display:inline-block;
 	cursor:pointer;
-	color:#000000;
+	color:#999999;
 	font-family:Arial;
 	font-size:18px;
 	font-weight:bold;
 	padding:12px 15px;
 	text-decoration:none;
-	text-shadow:0px -1px 0px #d5b123;
+	text-shadow:0px -1px 0px #222222;
     margin-top: -1px;
     height: 50px;
     width: 110px;
     text-align: center;
 }
 .navButton:hover {
-	background-color:#c2a023;
+	background-color:#222222;
 }
 .navButton:active {
 	position:relative;
@@ -59,3 +59,11 @@
     background-color: #F5F0C8;
     height: 40px;
 }
+	
+  /* Use before and after pseudo-elements in CSS to insert the email username and domain name on either side of the @ symbol */
+  email::after {
+    content: attr(data-domain);
+  }
+  email::before {
+    content: attr(data-user);
+  }

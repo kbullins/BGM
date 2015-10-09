@@ -1,57 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{% block title %}{% endblock %}</title>
-    <!-- Display the Fav Icon -->
-    <link rel="shortcut icon" type="image/png" href="/static/images/favicon.ico"/>
+<title>{% block title %}{% endblock %}</title>
+<!-- Display the Fav Icon -->
+<link rel="shortcut icon" type="image/png" href="/static/images/favicon.ico"/>
 
-    <!-- Static Includes -->
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/static/css/master.css" media="screen" />
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/static/css/master.css" media="screen" />
 </head>
 
 <body style="background-color: #F5F0C8;">
-
-<nav class="navbar navbar-inverse" style="height: 150px; background-color: #284628; margin-bottom: 0px; border: 0px; border-radius: 0px;">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <img src="/static/images/BGMLogo-med.png" class="navbar-brand" alt="..." style="height: 295px; height: 220px; position: absolute; z-index: 100; top: -10px">
-            <div style="font-family: KAISG; font-size: 400%; white-space: nowrap; color: #D5B023; margin-top: 10px; margin-left: 135px; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; " class="navbar-brand"> Barony of<br><div style="margin-top: 40px; font-size: 150%; margin-left: 70px;">Granite Mountain</div></div>
-        </div>
-    </div><!-- /.container-fluid -->
+<nav class="navbar navbar-inverse" style="height: 145px; background-color: #284628; margin-bottom: 0px; border: 0px; border-radius: 0px;">
+  <div class="container-fluid"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header"> <img src="/static/images/BGMLogo-med.png" class="navbar-brand" alt="..." style="height: 295px; height: 220px; position: absolute; z-index: 100; top: -10px;">
+      <div style="font-family: KAISG; font-size: 400%; white-space: nowrap; color: #D5B023; margin-top: 10px; margin-left: 135px; text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000; " class="navbar-brand"> Barony of<br>
+        <div style="margin-top: 40px; font-size: 150%; margin-left: 70px;">Granite Mountain</div>
+      </div>
+    </div>
+  </div>
+  <!-- /.container-fluid --> 
 </nav>
-
-<nav class="navbar navbar-inverse" style="border-radius: 0px; box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);">
-    <a href="\home" class="navButton" style="margin-left: 164px;">Home</a>
-    <a href="\calendar" class="navButton" style="margin-left: 20px;">Calendar</a>
-    <a href="\about" class="navButton" style="margin-left: 20px;">About</a>
-    <a href="\contact" class="navButton" style="margin-left: 20px;">Contact</a>
+<nav class="navbar navbar-inverse" style="border-radius: 0px; box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5); height: 55px">
+  <div style="margin-top: 3px; margin-left: -25px;"> 
+  <a href="\home" class="navButton btn btn-success btn-lg" style="margin-left: 164px; border: 0px">Home</a> 
+  <a href="\officers" class="navButton btn btn-success btn-lg" style="margin-left: 20px; border: 0px">Officers</a> 
+  <a href="\bchamp" class="navButton btn btn-success btn-lg" style="margin-left: 20px; border: 0px">Baronial Champions</a> 
+  <a href="\calendar" class="navButton btn btn-success btn-lg" style="margin-left: 110px; border: 0px">Calendar</a> 
+  <a href="\about" class="navButton btn btn-success btn-lg" style="margin-left: 20px; border: 0px">About Us</a> 
+  <a href="\contact" class="navButton btn btn-success btn-lg" style="margin-left: 20px; border: 0px">Contact</a> </div>
 </nav>
-
 <div class="container">
-    <table align="center" style="margin-top: 20px">
-        <thead>
-        </thead>
-        <tbody>
-        <!--Page Content-->
-        <td>
-            <div class="container">
-                <!-- Page Content using Django Templates -->
-                {% block content %}
-                {% endblock %}
-            </div>
-        </td>
+  <table align="center" style="margin-top: 20px">
+    <thead>
+    </thead>
+    <tbody>
+      <!--Page Content-->
+    <td><div class="container"> 
+          <!-- Page Content using Django Templates --> 
+          {% block content %}
+          {% endblock %} </div></td>
         </tbody>
-    </table>
+  </table>
 </div>
-
+<!--
 <footer class="footer">
-    <p>Copyright <span class="glyphicon glyphicon-copyright-mark"></span> 2015, Webmaster Kristopher Bullins</p>
+  <p>Copyright <span class="glyphicon glyphicon-copyright-mark"></span> 2015, Webmaster Kristopher Bullins</p>
 </footer>
+-->
 </body>

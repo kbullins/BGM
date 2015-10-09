@@ -89,3 +89,4 @@ TEMPLATE_DIRS = (
     os.path.join(os.path.dirname(BASE_DIR),"BGM","BGM", "templates"),
                   )
 
+
