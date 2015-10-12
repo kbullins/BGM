@@ -27,25 +27,38 @@
   <!-- /.container-fluid --> 
 </nav>
 <nav class="navbar navbar-inverse" style="border-radius: 0px; box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5); height: 55px">
-  <div style="margin-top: 3px; margin-left: -25px;"> 
-  <a href="\home" class="navButton btn btn-success btn-lg" style="margin-left: 164px; border: 0px">Home</a> 
-  <a href="\officers" class="navButton btn btn-success btn-lg" style="margin-left: 20px; border: 0px">Officers</a> 
-  <a href="\bchamp" class="navButton btn btn-success btn-lg" style="margin-left: 20px; border: 0px">Baronial Champions</a> 
-  <a href="\calendar" class="navButton btn btn-success btn-lg" style="margin-left: 110px; border: 0px">Calendar</a> 
-  <a href="\about" class="navButton btn btn-success btn-lg" style="margin-left: 20px; border: 0px">About Us</a> 
-  <a href="\contact" class="navButton btn btn-success btn-lg" style="margin-left: 20px; border: 0px">Contact</a> </div>
+	<div style="margin-top: 13px; white-space: nowrap"> 
+		<a href="\home" class="navbtn" style="margin-left: 185px; border: 0px">Home</a> 
+		<a href="\officers" class="navbtn" style="margin-left: 20px; border: 0px">Officers</a> 
+		<a href="\bchamp" class="navbtn" style="margin-left: 20px; border: 0px">Court</a> 
+		<a href="\calendar" class="navbtn" style="margin-left: 20px; border: 0px">Calendar</a> 
+		<a href="\about" class="navbtn" style="margin-left: 20px; border: 0px">About Us</a> 
+		<a href="\contact" class="navbtn" style="margin-left: 20px; border: 0px">Contact</a>
+        <div class="btn-group" style="margin-top: -6px;">       
+            <a href="\contact" class="navbtn dropdown-toggle" data-toggle="dropdown" style="margin-left: 20px; border: 0px">Dropdown
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu" style="margin-left: 20px">
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+            </ul>
+        </div>
+ 	</div>
 </nav>
 <div class="container">
-  <table align="center" style="margin-top: 20px">
+  <table style="margin-top: 20px">
     <thead>
     </thead>
     <tbody>
-      <!--Page Content-->
-    <td><div class="container"> 
-          <!-- Page Content using Django Templates --> 
-          {% block content %}
-          {% endblock %} </div></td>
-        </tbody>
+      	<!--Page Content-->
+        <td>
+        	<div class="container"> 
+            	<!-- Page Content using Django Templates --> 
+            	{% block content %}
+            	{% endblock %} 
+        	</div>
+        </td>
+    </tbody>
   </table>
 </div>
 <!--

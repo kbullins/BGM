@@ -67,3 +67,20 @@
   email::before {
     content: attr(data-user);
   }
+  
+/* a link modifying undercolor */
+a.navbtn:link {
+	color:#B2B2B2; font-size:18px; text-decoration:none;
+	}
+	a.navbtn:visited {
+		color:#B2B2B2; font-size:18px; text-decoration:none
+	}
+	a.navbtn:hover{
+		color:#FFFFFF; font-size:18px;text-decoration:none
+	}
+	a.navbtn:active {
+		color:##B2B2B2; font-size:18px; text-decoration:none
+	}
+/* Navigation bar top */
+
+</style>
