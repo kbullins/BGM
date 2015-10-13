@@ -7,16 +7,20 @@ from . import views
 # from django.contrib import admin
 
 urlpatterns = patterns('',
-    # Examples:
 	url(r'^$', 'BGM.views.index', name='index'),
     url(r'^home', 'BGM.views.home', name='home'),
     url(r'^calendar', 'BGM.views.calendar', name='calendar'),
 	url(r'^officers', 'BGM.views.officers', name='officers'),
-	url(r'^bchamp', 'BGM.views.bchamp', name='bchamp'),
+	url(r'^bcourt', 'BGM.views.bcourt', name='bcourt'),
     url(r'^about', 'BGM.views.about', name='about'),
     url(r'^contact/$', 'BGM.views.contact', name='contact'),
-	#url(r'^contact/send/$', sendmail),
 	url(r'^thankyou/', 'BGM.views.thankyou', name='thankyou'),
-    # url(r'^blog/', include('blog.urls')),
     url(r'^admin/', include(admin.site.urls)),
+	#Activities Pages
+    url(r'^armouredcombat/$', 'BGM.views.armouredcombat', name='armouredcombat'),
+	url(r'^rapiercombat/$', 'BGM.views.rapiercombat', name='rapiercombat'),
+	url(r'^artsciences/$', 'BGM.views.artsciences', name='artsciences'),
+	url(r'^scriptorium/$', 'BGM.views.scriptorium', name='scriptorium'),
+	url(r'^meeting/$', 'BGM.views.meeting', name='meeting'),
+	url(r'^archery/$', 'BGM.views.archery', name='archery'),
 ) 
