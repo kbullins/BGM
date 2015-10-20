@@ -6,7 +6,12 @@ def index(request):
 	return render_to_response('index.html', context_instance=RequestContext(request))
 
 def home(request):
-    return render(request, 'index.html', {})
+	if request.user.is_authenticated():
+		# Do something for authenticated users.
+		return render(request, 'index.html', {})
+	else:
+		# Do something for anonymous users.
+		return render(request, 'index.html', {})
 
 def calendar(request):
     return render(request, 'calendar.html', {})
@@ -43,5 +48,8 @@ def archery(request):
 	
 def contact(request):	
 	return render(request, 'contact.html', {})
+	
+def newsletter(request):	
+	return render(request, 'newsletter.html', {})
 
 			

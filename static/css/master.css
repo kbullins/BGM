@@ -68,6 +68,9 @@
     content: attr(data-user);
   }
   
+  .p{
+	  word-wrap: break-word;
+	}
 /* a link modifying undercolor */
 a.navbtn:link {
 	color:#B2B2B2; font-size:18px; text-decoration:none;
@@ -82,5 +85,51 @@ a.navbtn:link {
 		color:##B2B2B2; font-size:18px; text-decoration:none
 	}
 /* Navigation bar top */
+
+/* Social Media Sidebar*/
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+   font-family: "entypo", sans-serif;
+}
+a.social { 
+   text-decoration: none;
+}
+ul.ulsocial {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+#sticky-social {
+   left: 0;
+   position: absolute;
+   top: 240px;
+}
+#sticky-social a {
+   background: #333;
+   color: #fff;
+   display: block;
+   height: 35px;
+   font: 16px "Open Sans", sans-serif;
+   line-height: 40px;
+   position: relative;
+   text-align: center;
+   width: 35px;
+   z-index:99
+}
+#sticky-social a span {
+   line-height: 35px;
+   left: -140px;
+   position: absolute;
+   text-align:center;
+   width:140px;
+}
+#sticky-social a:hover span {
+   left: 100%;
+}
+#sticky-social a[class*="facebook"],
+#sticky-social a[class*="facebook"]:hover,
+#sticky-social a[class*="facebook"] span { background: #3b5998; }
 
 </style>
