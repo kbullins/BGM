@@ -132,4 +132,8 @@ ul.ulsocial {
 #sticky-social a[class*="facebook"]:hover,
 #sticky-social a[class*="facebook"] span { background: #3b5998; }
 
+#sticky-social a[class*="contactus"],
+#sticky-social a[class*="contactus"]:hover,
+#sticky-social a[class*="contactus"] span { background: #274527; }
+
 </style>
