@@ -19,6 +19,9 @@ def calendar(request):
 def thankyou(request):
     return render(request, 'thankyou.html', {})
 	
+def awards(request):
+	return render(request, 'awards.html', {})
+	
 def officers(request):
 	return render(request, 'officers.html', {})
 
